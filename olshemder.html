@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Қазақ өлшемдері — Қазақ есептері</title>
+    <meta name="description"
+        content="Қазақ халқының дәстүрлі өлшем бірліктері — ұзындық, салмақ, көлем, уақыт — заманауи метрикамен салыстыру">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ornament-pattern-bg"></div>
+    <div class="particles-bg" id="particles"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="nav-logo-icon">✦</span>
+                <span>Қазақ есептері</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Басты бет</a>
+                <a href="olshemder.html" class="nav-link active">Қазақ өлшемдері</a>
+                <a href="esepter.html" class="nav-link">Халық есептер жинағы</a>
+                <a href="biz-zhaily.html" class="nav-link">Біз жайлы</a>
+            </div>
+            <button class="nav-burger" id="navBurger" aria-label="Мәзір">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mobile-link">Басты бет</a>
+        <a href="olshemder.html" class="mobile-link active">Қазақ өлшемдері</a>
+        <a href="esepter.html" class="mobile-link">Халық есептер жинағы</a>
+        <a href="biz-zhaily.html" class="mobile-link">Біз жайлы</a>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-header-orb page-header-orb-1"></div>
+        <div class="page-header-orb page-header-orb-2"></div>
+        <div class="page-header-content">
+            <div class="page-badge">📏 Дәстүрлі өлшемдер</div>
+            <h1 class="page-title">
+                Қазақ <span class="page-title-accent">өлшемдері</span>
+            </h1>
+            <p class="page-subtitle">
+                Ата-бабаларымыз ғасырлар бойы қолданған дәстүрлі ұзындық, салмақ, көлем және уақыт
+                өлшемдері — заманауи метрик жүйесімен интерактивті салыстыру.
+            </p>
+        </div>
+    </header>
+
+    <!-- Measurements -->
+    <section class="measurements-section">
+        <div class="container" id="measurementsContainer">
+            <!-- Rendered by JS -->
+        </div>
+    </section>
+
+    <!-- Section divider -->
+    <div class="section-divider">
+        <span class="divider-line"></span>
+        <span class="divider-ornament">◆</span>
+        <span class="divider-line"></span>
+    </div>
+
+    <!-- Interactive Converter -->
+    <section class="converter-section">
+        <div class="container">
+            <div class="converter-card reveal" id="converterCard">
+                <h2 class="converter-title">🔄 Интерактивті конвертер</h2>
+                <div id="converterSliders">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="footer-brand-icon">✦</span>
+                    <span class="footer-brand-name">Қазақ есептері</span>
+                </div>
+                <p class="footer-desc">Ата-бабаларымыздың ақыл-ой мұрасын сақтап, келер ұрпаққа жеткізу мақсатында
+                    жасалған сайт.</p>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Басты бет</a>
+                    <a href="esepter.html" class="footer-link">Халық есептер жинағы</a>
+                    <a href="biz-zhaily.html" class="footer-link">Біз жайлы</a>
+                </div>
+                <div class="footer-line"></div>
+                <p class="footer-copy">© 2026 Барлық құқықтар қорғалған</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="illustrations.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderMeasurements();
+            renderConverters();
+        });
+    </script>
+</body>
+
+</html>
+

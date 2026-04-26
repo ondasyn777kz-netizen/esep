@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Халық есептер жинағы — Қазақ есептері</title>
+    <meta name="description"
+        content="Қазақ халқының дәстүрлі ауызша есептері — логикалық, тұрмыстық, тапқырлық есептер жинағы">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ornament-pattern-bg"></div>
+    <div class="particles-bg" id="particles"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="nav-logo-icon">✦</span>
+                <span>Қазақ есептері</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Басты бет</a>
+                <a href="olshemder.html" class="nav-link">Қазақ өлшемдері</a>
+                <a href="esepter.html" class="nav-link active">Халық есептер жинағы</a>
+                <a href="biz-zhaily.html" class="nav-link">Біз жайлы</a>
+            </div>
+            <button class="nav-burger" id="navBurger" aria-label="Мәзір">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mobile-link">Басты бет</a>
+        <a href="olshemder.html" class="mobile-link">Қазақ өлшемдері</a>
+        <a href="esepter.html" class="mobile-link active">Халық есептер жинағы</a>
+        <a href="biz-zhaily.html" class="mobile-link">Біз жайлы</a>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-header-orb page-header-orb-1"></div>
+        <div class="page-header-orb page-header-orb-2"></div>
+        <div class="page-header-content">
+            <div class="page-badge">🧮 Ауызша есептер</div>
+            <h1 class="page-title">
+                Қазақтың <span class="page-title-accent">халық есептер жинағы</span>
+            </h1>
+            <p class="page-subtitle">
+                Логикалық ойлауды, тапқырлықты және зеректікті дамытатын дәстүрлі
+                қазақ халық есептері — ата-бабалар мұрасы.
+            </p>
+        </div>
+    </header>
+
+    <!-- Filter tabs -->
+    <section class="problems-section">
+        <div class="container">
+            <div class="filter-tabs" id="filterTabs">
+                <button class="filter-tab active" data-filter="all">Барлығы</button>
+                <button class="filter-tab" data-filter="logic">🧠 Логикалық</button>
+                <button class="filter-tab" data-filter="everyday">🏠 Тұрмыстық</button>
+                <button class="filter-tab" data-filter="wit">💡 Тапқырлық</button>
+            </div>
+
+            <div class="problems-grid" id="problemsGrid">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="footer-brand-icon">✦</span>
+                    <span class="footer-brand-name">Қазақ есептері</span>
+                </div>
+                <p class="footer-desc">Ата-бабаларымыздың ақыл-ой мұрасын сақтап, келер ұрпаққа жеткізу мақсатында
+                    жасалған сайт.</p>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Басты бет</a>
+                    <a href="olshemder.html" class="footer-link">Қазақ өлшемдері</a>
+                    <a href="biz-zhaily.html" class="footer-link">Біз жайлы</a>
+                </div>
+                <div class="footer-line"></div>
+                <p class="footer-copy">© 2026 Барлық құқықтар қорғалған</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProblems();
+            initFilterTabs();
+        });
+    </script>
+</body>
+
+</html>
+
